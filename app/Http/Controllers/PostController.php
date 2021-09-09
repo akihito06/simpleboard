@@ -14,8 +14,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-
+       //データベースのpostテーブルのデータを全てもってくる
+       
+        $posts = Post::all();   
+          
         return view('posts.index', compact('posts'));
     }
 
